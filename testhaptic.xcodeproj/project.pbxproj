@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E08051F2CA0198B00AF3E02 /* testhapticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08051E2CA0198B00AF3E02 /* testhapticApp.swift */; };
+		1E0805212CA0198B00AF3E02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0805202CA0198B00AF3E02 /* ContentView.swift */; };
+		1E0805232CA0198E00AF3E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E0805222CA0198E00AF3E02 /* Assets.xcassets */; };
+		1E0805262CA0198E00AF3E02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E0805252CA0198E00AF3E02 /* Preview Assets.xcassets */; };
+		1E08052C2CA0198E00AF3E02 /* testhaptic Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1E08052B2CA0198E00AF3E02 /* testhaptic Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1E0805312CA0198E00AF3E02 /* testhapticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0805302CA0198E00AF3E02 /* testhapticApp.swift */; };
+		1E0805332CA0198E00AF3E02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0805322CA0198E00AF3E02 /* ContentView.swift */; };
+		1E0805352CA0198F00AF3E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E0805342CA0198F00AF3E02 /* Assets.xcassets */; };
+		1E0805382CA0198F00AF3E02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E0805372CA0198F00AF3E02 /* Preview Assets.xcassets */; };
+		1E0805432CA2E3A700AF3E02 /* PitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0805422CA2E3A700AF3E02 /* PitchDetector.swift */; };
+		1E0805482CA3B74700AF3E02 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E0805472CA3B74700AF3E02 /* AudioKit */; };
+		1E08054A2CA3B74B00AF3E02 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = 1E0805492CA3B74B00AF3E02 /* AudioKitEX */; };
+		1E08054D2CA3B7BB00AF3E02 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E08054C2CA3B7BB00AF3E02 /* SoundpipeAudioKit */; };
+		1E36E9082CA978CD00B0038F /* ScanPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36E9072CA978CD00B0038F /* ScanPDFView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E08052D2CA0198E00AF3E02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E0805132CA0198B00AF3E02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E08052A2CA0198E00AF3E02;
+			remoteInfo = "testhaptic Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E08053E2CA0198F00AF3E02 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1E08052C2CA0198E00AF3E02 /* testhaptic Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E08051B2CA0198B00AF3E02 /* testhaptic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testhaptic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E08051E2CA0198B00AF3E02 /* testhapticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testhapticApp.swift; sourceTree = "<group>"; };
+		1E0805202CA0198B00AF3E02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E0805222CA0198E00AF3E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E0805252CA0198E00AF3E02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E08052B2CA0198E00AF3E02 /* testhaptic Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testhaptic Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0805302CA0198E00AF3E02 /* testhapticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testhapticApp.swift; sourceTree = "<group>"; };
+		1E0805322CA0198E00AF3E02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E0805342CA0198F00AF3E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E0805372CA0198F00AF3E02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E0805422CA2E3A700AF3E02 /* PitchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetector.swift; sourceTree = "<group>"; };
+		1E36E9072CA978CD00B0038F /* ScanPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPDFView.swift; sourceTree = "<group>"; };
+		1E36E9092CA99E8700B0038F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E0805182CA0198B00AF3E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0805482CA3B74700AF3E02 /* AudioKit in Frameworks */,
+				1E08054A2CA3B74B00AF3E02 /* AudioKitEX in Frameworks */,
+				1E08054D2CA3B7BB00AF3E02 /* SoundpipeAudioKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0805282CA0198E00AF3E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E0805122CA0198B00AF3E02 = {
+			isa = PBXGroup;
+			children = (
+				1E08051D2CA0198B00AF3E02 /* testhaptic */,
+				1E08052F2CA0198E00AF3E02 /* testhaptic Watch App */,
+				1E08051C2CA0198B00AF3E02 /* Products */,
+				1E0805462CA3B74700AF3E02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E08051C2CA0198B00AF3E02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E08051B2CA0198B00AF3E02 /* testhaptic.app */,
+				1E08052B2CA0198E00AF3E02 /* testhaptic Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E08051D2CA0198B00AF3E02 /* testhaptic */ = {
+			isa = PBXGroup;
+			children = (
+				1E36E9092CA99E8700B0038F /* Info.plist */,
+				1E08051E2CA0198B00AF3E02 /* testhapticApp.swift */,
+				1E0805202CA0198B00AF3E02 /* ContentView.swift */,
+				1E36E9072CA978CD00B0038F /* ScanPDFView.swift */,
+				1E0805422CA2E3A700AF3E02 /* PitchDetector.swift */,
+				1E0805222CA0198E00AF3E02 /* Assets.xcassets */,
+				1E0805242CA0198E00AF3E02 /* Preview Content */,
+			);
+			path = testhaptic;
+			sourceTree = "<group>";
+		};
+		1E0805242CA0198E00AF3E02 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1E0805252CA0198E00AF3E02 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E08052F2CA0198E00AF3E02 /* testhaptic Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				1E0805302CA0198E00AF3E02 /* testhapticApp.swift */,
+				1E0805322CA0198E00AF3E02 /* ContentView.swift */,
+				1E0805342CA0198F00AF3E02 /* Assets.xcassets */,
+				1E0805362CA0198F00AF3E02 /* Preview Content */,
+			);
+			path = "testhaptic Watch App";
+			sourceTree = "<group>";
+		};
+		1E0805362CA0198F00AF3E02 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1E0805372CA0198F00AF3E02 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E0805462CA3B74700AF3E02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E08051A2CA0198B00AF3E02 /* testhaptic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E08053F2CA0198F00AF3E02 /* Build configuration list for PBXNativeTarget "testhaptic" */;
+			buildPhases = (
+				1E0805172CA0198B00AF3E02 /* Sources */,
+				1E0805182CA0198B00AF3E02 /* Frameworks */,
+				1E0805192CA0198B00AF3E02 /* Resources */,
+				1E08053E2CA0198F00AF3E02 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E08052E2CA0198E00AF3E02 /* PBXTargetDependency */,
+			);
+			name = testhaptic;
+			packageProductDependencies = (
+				1E0805472CA3B74700AF3E02 /* AudioKit */,
+				1E0805492CA3B74B00AF3E02 /* AudioKitEX */,
+				1E08054C2CA3B7BB00AF3E02 /* SoundpipeAudioKit */,
+			);
+			productName = testhaptic;
+			productReference = 1E08051B2CA0198B00AF3E02 /* testhaptic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E08052A2CA0198E00AF3E02 /* testhaptic Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E08053B2CA0198F00AF3E02 /* Build configuration list for PBXNativeTarget "testhaptic Watch App" */;
+			buildPhases = (
+				1E0805272CA0198E00AF3E02 /* Sources */,
+				1E0805282CA0198E00AF3E02 /* Frameworks */,
+				1E0805292CA0198E00AF3E02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "testhaptic Watch App";
+			productName = "testhaptic Watch App";
+			productReference = 1E08052B2CA0198E00AF3E02 /* testhaptic Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E0805132CA0198B00AF3E02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1E08051A2CA0198B00AF3E02 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					1E08052A2CA0198E00AF3E02 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 1E0805162CA0198B00AF3E02 /* Build configuration list for PBXProject "testhaptic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E0805122CA0198B00AF3E02;
+			packageReferences = (
+				1E0805442CA3AAA400AF3E02 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				1E0805452CA3AABF00AF3E02 /* XCRemoteSwiftPackageReference "AudioKitEX" */,
+				1E08054B2CA3B76600AF3E02 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+			);
+			productRefGroup = 1E08051C2CA0198B00AF3E02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E08051A2CA0198B00AF3E02 /* testhaptic */,
+				1E08052A2CA0198E00AF3E02 /* testhaptic Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E0805192CA0198B00AF3E02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0805262CA0198E00AF3E02 /* Preview Assets.xcassets in Resources */,
+				1E0805232CA0198E00AF3E02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0805292CA0198E00AF3E02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0805382CA0198F00AF3E02 /* Preview Assets.xcassets in Resources */,
+				1E0805352CA0198F00AF3E02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E0805172CA0198B00AF3E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0805212CA0198B00AF3E02 /* ContentView.swift in Sources */,
+				1E0805432CA2E3A700AF3E02 /* PitchDetector.swift in Sources */,
+				1E36E9082CA978CD00B0038F /* ScanPDFView.swift in Sources */,
+				1E08051F2CA0198B00AF3E02 /* testhapticApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0805272CA0198E00AF3E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0805332CA0198E00AF3E02 /* ContentView.swift in Sources */,
+				1E0805312CA0198E00AF3E02 /* testhapticApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E08052E2CA0198E00AF3E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E08052A2CA0198E00AF3E02 /* testhaptic Watch App */;
+			targetProxy = 1E08052D2CA0198E00AF3E02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E0805392CA0198F00AF3E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E08053A2CA0198F00AF3E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1E08053C2CA0198F00AF3E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testhaptic Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = AQCS8SYVV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = testhaptic;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ac.appleDevelop.testhaptic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.appleDevelop.testhaptic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		1E08053D2CA0198F00AF3E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testhaptic Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = AQCS8SYVV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = testhaptic;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ac.appleDevelop.testhaptic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.appleDevelop.testhaptic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		1E0805402CA0198F00AF3E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testhaptic/Preview Content\"";
+				DEVELOPMENT_TEAM = AQCS8SYVV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testhaptic/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = testhaptic;
+				INFOPLIST_KEY_NSCameraUsageDescription = "앱이 사진을 촬영하기 위해 카메라에 접근합니다";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app requires access to the microphone to detect pitch.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.appleDevelop.testhaptic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E0805412CA0198F00AF3E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testhaptic/Preview Content\"";
+				DEVELOPMENT_TEAM = AQCS8SYVV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testhaptic/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = testhaptic;
+				INFOPLIST_KEY_NSCameraUsageDescription = "앱이 사진을 촬영하기 위해 카메라에 접근합니다";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app requires access to the microphone to detect pitch.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.appleDevelop.testhaptic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E0805162CA0198B00AF3E02 /* Build configuration list for PBXProject "testhaptic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0805392CA0198F00AF3E02 /* Debug */,
+				1E08053A2CA0198F00AF3E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E08053B2CA0198F00AF3E02 /* Build configuration list for PBXNativeTarget "testhaptic Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E08053C2CA0198F00AF3E02 /* Debug */,
+				1E08053D2CA0198F00AF3E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E08053F2CA0198F00AF3E02 /* Build configuration list for PBXNativeTarget "testhaptic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0805402CA0198F00AF3E02 /* Debug */,
+				1E0805412CA0198F00AF3E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E0805442CA3AAA400AF3E02 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.4;
+			};
+		};
+		1E0805452CA3AABF00AF3E02 /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitEX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		1E08054B2CA3B76600AF3E02 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E0805472CA3B74700AF3E02 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E0805442CA3AAA400AF3E02 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		1E0805492CA3B74B00AF3E02 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E0805452CA3AABF00AF3E02 /* XCRemoteSwiftPackageReference "AudioKitEX" */;
+			productName = AudioKitEX;
+		};
+		1E08054C2CA3B7BB00AF3E02 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E08054B2CA3B76600AF3E02 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1E0805132CA0198B00AF3E02 /* Project object */;
+}
